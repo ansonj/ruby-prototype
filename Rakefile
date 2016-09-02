@@ -5,6 +5,7 @@ task default: :dev
 Rake::TestTask.new do |t|
   t.pattern = 'spec/*_spec.rb'
   t.libs << 'spec'
+  t.warning = false # TODO: remove this
 end
 
 desc 'Run rubocop\'s full suite'
